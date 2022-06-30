@@ -31,6 +31,7 @@ Partial Class baseForm
         Me.leftZ = New System.Windows.Forms.Button()
         Me.midZ = New System.Windows.Forms.Button()
         Me.rightZ = New System.Windows.Forms.Button()
+        Me.btnReset = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'leftX
@@ -114,11 +115,21 @@ Partial Class baseForm
         Me.rightZ.TabIndex = 8
         Me.rightZ.UseVisualStyleBackColor = True
         '
+        'btnReset
+        '
+        Me.btnReset.Location = New System.Drawing.Point(197, 393)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(141, 23)
+        Me.btnReset.TabIndex = 9
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.UseVisualStyleBackColor = True
+        '
         'baseForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(556, 414)
+        Me.ClientSize = New System.Drawing.Size(556, 428)
+        Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.rightZ)
         Me.Controls.Add(Me.midZ)
         Me.Controls.Add(Me.leftZ)
@@ -145,4 +156,5 @@ Partial Class baseForm
     Friend WithEvents leftZ As Button
     Friend WithEvents midZ As Button
     Friend WithEvents rightZ As Button
+    Friend WithEvents btnReset As Button
 End Class

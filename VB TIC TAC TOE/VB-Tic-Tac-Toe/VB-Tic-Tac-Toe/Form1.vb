@@ -190,5 +190,17 @@
 
     End Sub
 
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        leftX.Text = ""
+        midX.Text = ""
+        rightX.Text = ""
 
+        leftY.Text = ""
+        midY.Text = ""
+        rightY.Text = ""
+
+        leftZ.Text = ""
+        midZ.Text = ""
+        rightZ.Text = ""
+    End Sub
 End Class
