@@ -72,6 +72,14 @@
                 Turn = "O"
             Else
                 Turn = "X"
+
+            End If
+
+            If leftY.Text = midY.Text And midY.Text = rightY.Text Then
+                MessageBox.Show(leftY.Text + " is The winner!!", "Congratulations")
+            ElseIf leftX.Text = leftY.Text And leftY.Text = leftZ.Text Then
+                MessageBox.Show(leftY.Text + " is The winner!!", "Congratulations")
+
             End If
         End If
 
@@ -84,8 +92,21 @@
                 Turn = "O"
             Else
                 Turn = "X"
+
+            End If
+
+
+            If midY.Text = midX.Text And midY.Text = midZ.Text Then
+                MessageBox.Show(midY.Text + " is The winner!!", "Congratulations")
+            ElseIf midY.Text = leftX.Text And midY.Text = rightZ.Text Then
+                MessageBox.Show(midY.Text + " is The winner!!", "Congratulations")
+            ElseIf midY.Text = rightX.Text And midY.Text = leftZ.Text Then
+                MessageBox.Show(midY.Text + " is The winner!!", "Congratulations")
+            ElseIf midY.Text = leftY.Text And midY.Text = rightY.Text Then
+                MessageBox.Show(midY.Text + " is The winner!!", "Congratulations")
             End If
         End If
+
 
     End Sub
 
@@ -96,6 +117,12 @@
                 Turn = "O"
             Else
                 Turn = "X"
+            End If
+
+            If rightY.Text = midY.Text And midY.Text = leftY.Text Then
+                MessageBox.Show(rightY.Text + " is The winner!!", "Congratulations")
+            ElseIf rightY.Text = rightZ.Text And rightY.Text = rightZ.Text Then
+                MessageBox.Show(rightY.Text + " is The winner!!", "Congratulations")
             End If
         End If
 
@@ -108,6 +135,16 @@
                 Turn = "O"
             Else
                 Turn = "X"
+
+            End If
+
+
+            If leftZ.Text = midZ.Text And midZ.Text = rightZ.Text Then
+                MessageBox.Show(leftZ.Text + " is The winner!!", "Congratulations")
+            ElseIf leftZ.Text = leftY.Text And leftY.Text = leftX.Text Then
+                MessageBox.Show(leftZ.Text + " is The winner!!", "Congratulations")
+            ElseIf leftZ.Text = midY.Text And midY.Text = rightX.Text Then
+                MessageBox.Show(leftZ.Text + " is The winner!!", "Congratulations")
             End If
         End If
 
@@ -120,6 +157,13 @@
                 Turn = "O"
             Else
                 Turn = "X"
+
+            End If
+
+            If midZ.Text = leftZ.Text And midZ.Text = rightZ.Text Then
+                MessageBox.Show(midZ.Text + " is The winner!!", "Congratulations")
+            ElseIf midZ.Text = midY.Text And midY.Text = midX.Text Then
+                MessageBox.Show(midZ.Text + " is The winner!!", "Congratulations")
             End If
         End If
 
@@ -132,6 +176,15 @@
                 Turn = "O"
             Else
                 Turn = "X"
+            End If
+
+
+            If rightZ.Text = rightY.Text And rightY.Text = rightX.Text Then
+                MessageBox.Show(rightZ.Text + " is The winner!!", "Congratulations")
+            ElseIf rightZ.Text = midZ.Text And midZ.Text = leftZ.Text Then
+                MessageBox.Show(rightZ.Text + " is The winner!!", "Congratulations")
+            ElseIf rightZ.Text = midY.Text And midY.Text = leftX.Text Then
+                MessageBox.Show(rightZ.Text + " is The winner!!", "Congratulations")
             End If
         End If
 
