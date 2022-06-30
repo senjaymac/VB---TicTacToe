@@ -51,6 +51,16 @@
             Else
                 Turn = "X"
             End If
+
+
+            If rightX.Text = midX.Text And midX.Text = leftX.Text Then
+                MessageBox.Show(rightX.Text + " is The winner!!", "Congratulations")
+            ElseIf rightX.Text = midY.Text And midY.Text = leftZ.Text Then
+                MessageBox.Show(rightX.Text + " is The winner!!", "Congratulations")
+            ElseIf rightX.Text = rightY.Text And rightY.Text = rightZ.Text Then
+                MessageBox.Show(rightX.Text + " is The winner!!", "Congratulations")
+            End If
+
         End If
 
     End Sub
