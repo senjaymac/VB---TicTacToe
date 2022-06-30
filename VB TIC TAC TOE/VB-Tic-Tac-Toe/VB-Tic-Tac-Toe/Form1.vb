@@ -121,7 +121,7 @@
 
             If rightY.Text = midY.Text And midY.Text = leftY.Text Then
                 MessageBox.Show(rightY.Text + " is The winner!!", "Congratulations")
-            ElseIf rightY.Text = rightZ.Text And rightY.Text = rightZ.Text Then
+            ElseIf rightY.Text = rightZ.Text And rightY.Text = rightX.Text Then
                 MessageBox.Show(rightY.Text + " is The winner!!", "Congratulations")
             End If
         End If
